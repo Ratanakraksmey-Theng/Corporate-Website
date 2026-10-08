@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARGIS Corporation | Enterprise Cloud & Managed IT Solutions</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Theme CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. Top Utility Bar
+       ========================================================================= -->
+  <div class="top-bar py-2 text-white d-none d-md-block">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-4">
+        <!-- <span><i class="bi bi-telephone-fill me-2 text-info"></i>24/7 Enterprise SOC: <strong>+1 (800) 840-ARGIS</strong></span>
+        <span><i class="bi bi-shield-check me-2 text-info"></i>ISO 27001 & SOC 2 Type II Certified</span> -->
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <span class="status-badge">
+          <span class="status-indicator"></span> All Systems Operational
+        </span>
+        <a href="#contact" class="text-white-50 text-decoration-none hover-white ms-2">Client Portal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       2. Sticky Modern Navbar (Home, About Us, Our Services, Contact Us)
+       ========================================================================= -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-icon">
+          <i class="bi bi-shield-lock-fill"></i>
+        </div>
+        <span>ARGIS <span style="color: var(--cyan-accent);">CORPORATION</span></span>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Our Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#case-studies">Case Studies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-2">
+          <a href="#contact" class="btn btn-cyan">
+            <span>GET A CONSULTATION</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       3. Home / Hero Section (Dark Navy & Glowing Floating Elements)
+       ========================================================================= -->
+  <section id="home" class="hero-section">
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center g-5">
+        <!-- Left: Value Proposition -->
+        <div class="col-lg-7">
+          <div class="hero-badge">
+            <i class="bi bi-stars"></i> Next-Gen Enterprise IT Infrastructure
+          </div>
+          <h1 class="hero-title">
+            Enterprise Cloud & <br>
+            <span style="color: var(--cyan-accent);">Zero-Trust</span> Architecture
+          </h1>
+          <p class="hero-lead">
+            Empowering digital transformation with secure, scalable cloud solutions, 24/7 managed infrastructure, and proactive threat defense for global organizations.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#services" class="btn btn-cyan btn-lg">
+              Our Services <i class="bi bi-chevron-right"></i>
+            </a>
+            <a href="#about" class="btn btn-outline-white btn-lg">
+              About ARGIS
+            </a>
+          </div>
+
+          <div class="mt-5 pt-3 border-top border-secondary border-opacity-25">
+            <small class="text-white-50 text-uppercase tracking-wider fw-semibold d-block mb-2">Certified Enterprise Cloud Alliances</small>
+            <div class="d-flex align-items-center gap-4 text-white-50 fs-5 flex-wrap">
+              <span><i class="bi bi-microsoft me-2"></i>Microsoft Azure</span>
+              <span><i class="bi bi-amazon me-2"></i>AWS Premier</span>
+              <span><i class="bi bi-google me-2"></i>Google Cloud</span>
+              <span><i class="bi bi-shield-shaded me-2"></i>CrowdStrike</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Floating Glowing Metric Cards -->
+        <div class="col-lg-5">
+          <div class="d-flex flex-column gap-3 ps-lg-3">
+            <div class="hero-card">
+              <div class="hero-card-icon">
+                <i class="bi bi-speedometer2"></i>
+              </div>
+              <div>
+                <h4 class="hero-card-title">99.99% SLA</h4>
+                <p class="hero-card-subtitle">Uptime Guarantee & Global Resilience</p>
+              </div>
+            </div>
+
+            <div class="hero-card">
+              <div class="hero-card-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <div>
+                <h4 class="hero-card-title">ZERO-TRUST SOC</h4>
+                <p class="hero-card-subtitle">24/7 Continuous Threat Hunting</p>
+              </div>
+            </div>
+
+            <div class="hero-card">
+              <div class="hero-card-icon">
+                <i class="bi bi-buildings"></i>
+              </div>
+              <div>
+                <h4 class="hero-card-title">500+ Enterprise Clients</h4>
+                <p class="hero-card-subtitle">Proven Multi-Cloud Implementation Record</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. Metrics & KPI Bar
+       ========================================================================= -->
+  <section class="kpi-section">
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-3">
+          <div class="kpi-item">
+            <div class="kpi-number counter-val" data-target="99.99" data-decimals="2" data-suffix="%">0%</div>
+            <div class="kpi-label">Uptime Reliability SLA</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="kpi-item">
+            <div class="kpi-number counter-val" data-target="500" data-decimals="0" data-suffix="+">0</div>
+            <div class="kpi-label">Enterprise Migrations</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="kpi-item">
+            <div class="kpi-number counter-val" data-target="15" data-decimals="0" data-suffix=" min">0</div>
+            <div class="kpi-label">Average Incident Response</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="kpi-item">
+            <div class="kpi-number counter-val" data-target="24" data-decimals="0" data-suffix="/7">0</div>
+            <div class="kpi-label">Continuous SOC Monitoring</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. About Us Section (Pure White Background & Enterprise Credibility)
+       ========================================================================= -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <!-- Left: Story & Values -->
+        <div class="col-lg-6">
+          <span class="section-tag">About ARGIS Corporation</span>
+          <h2 class="section-title">Architecting Resilient IT For Tomorrow’s Enterprise Leaders</h2>
+          <p class="text-secondary mb-4">
+            Founded with a commitment to engineering excellence, ARGIS Corporation has grown into a trusted technology partner for Fortune 500 enterprises, government agencies, and rapidly expanding fintech giants.
+          </p>
+          <p class="text-secondary mb-4">
+            We bridge the gap between complex legacy infrastructure and modern multi-cloud agility. With round-the-clock Security Operations Centers in New York, London, and Singapore, our certified architects ensure your critical workloads remain secure, compliant, and always online.
+          </p>
+
+          <!-- 4 Core Pillars -->
+          <div class="row g-3 mt-2">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start gap-3">
+                <div class="text-primary fs-3"><i class="bi bi-shield-check"></i></div>
+                <div>
+                  <h6 class="fw-bold mb-1 text-dark">Zero-Compromise Security</h6>
+                  <p class="text-secondary small mb-0">Defense-in-depth security embedded into every infrastructure layer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start gap-3">
+                <div class="text-primary fs-3"><i class="bi bi-cpu"></i></div>
+                <div>
+                  <h6 class="fw-bold mb-1 text-dark">Engineered Agility</h6>
+                  <p class="text-secondary small mb-0">Automated CI/CD pipelines and infrastructure-as-code deployments.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start gap-3">
+                <div class="text-primary fs-3"><i class="bi bi-people"></i></div>
+                <div>
+                  <h6 class="fw-bold mb-1 text-dark">Dedicated Architects</h6>
+                  <p class="text-secondary small mb-0">Direct access to Tier-3 solutions architects with zero call center delays.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start gap-3">
+                <div class="text-primary fs-3"><i class="bi bi-globe-americas"></i></div>
+                <div>
+                  <h6 class="fw-bold mb-1 text-dark">Global Presence</h6>
+                  <p class="text-secondary small mb-0">Distributed nodes across 18 countries with regional data sovereignty.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-3">
+            <a href="about.html" class="btn btn-navy">
+              <span>Read Full Company Profile</span>
+              <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Corporate Milestone Grid -->
+        <div class="col-lg-6">
+          <div class="row g-4">
+            <div class="col-6">
+              <div class="about-card-stat">
+                <div class="about-stat-number">15+</div>
+                <div class="fw-bold text-dark mt-1">Years in Industry</div>
+                <small class="text-muted">Established in 2011</small>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="about-card-stat">
+                <div class="about-stat-number">450+</div>
+                <div class="fw-bold text-dark mt-1">Certified Architects</div>
+                <small class="text-muted">AWS, Azure & CISSP certified</small>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="about-card-stat">
+                <div class="about-stat-number">100%</div>
+                <div class="fw-bold text-dark mt-1">Audit Success Rate</div>
+                <small class="text-muted">SOC 2 & ISO compliance</small>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="about-card-stat">
+                <div class="about-stat-number">4</div>
+                <div class="fw-bold text-dark mt-1">Global SOC Centers</div>
+                <small class="text-muted">NYC, London, Singapore, Tokyo</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. Our Services Section (Comprehensive Solutions Grid)
+       ========================================================================= -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">What We Deliver</span>
+        <h2 class="section-title">Our Enterprise IT Services</h2>
+        <p class="section-subtitle">
+          End-to-end technology solutions engineered for high performance, uncompromising security, and seamless business continuity.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Service 1 (Featured Navy Highlight Card) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card highlighted">
+            <div class="service-icon">
+              <i class="bi bi-cloud-arrow-up"></i>
+            </div>
+            <h3 class="service-title">Cloud Migration & Strategy</h3>
+            <p class="service-desc">
+              Zero-downtime workload migrations, Kubernetes containerization, and multi-cloud optimization across AWS, Microsoft Azure, and GCP.
+            </p>
+            <a href="services.html#cloud" class="service-link">
+              Explore Cloud Services <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-shield-lock"></i>
+            </div>
+            <h3 class="service-title">Zero-Trust Cybersecurity & SOC</h3>
+            <p class="service-desc">
+              Next-gen SIEM/SOAR monitoring, identity access management, automated vulnerability patching, and 24/7 managed threat hunting.
+            </p>
+            <a href="services.html#cybersecurity" class="service-link">
+              Explore Cybersecurity <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-gear-wide-connected"></i>
+            </div>
+            <h3 class="service-title">24/7 Managed IT Infrastructure</h3>
+            <p class="service-desc">
+              Continuous server health monitoring, SLA-backed helpdesk support, operating system patching, and comprehensive virtualization management.
+            </p>
+            <a href="services.html#managed-it" class="service-link">
+              Explore Managed IT <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-diagram-3"></i>
+            </div>
+            <h3 class="service-title">Network & SD-WAN Modernization</h3>
+            <p class="service-desc">
+              Software-defined networking, hybrid branch office interconnects, low-latency BGP routing, and carrier-grade MPLS alternatives.
+            </p>
+            <a href="services.html#network" class="service-link">
+              Explore Networking <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-cpu"></i>
+            </div>
+            <h3 class="service-title">Enterprise AI & Data Pipelines</h3>
+            <p class="service-desc">
+              Real-time streaming ingestion with Kafka, modern cloud data lakes (Snowflake/BigQuery), and private on-premise AI model enablement.
+            </p>
+            <a href="services.html#data-ai" class="service-link">
+              Explore Data & AI <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-database-check"></i>
+            </div>
+            <h3 class="service-title">Disaster Recovery & Cyber Resilience</h3>
+            <p class="service-desc">
+              Ransomware-proof air-gapped backups, automated sub-minute failovers, and rigorous disaster recovery simulations (BCDR).
+            </p>
+            <a href="services.html#disaster-recovery" class="service-link">
+              Explore Disaster Recovery <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="services.html" class="btn btn-navy btn-lg">
+          View Complete Services Catalog <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. Security Assurance & Compliance (Navy Section)
+       ========================================================================= -->
+  <section id="assurance" class="assurance-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="hero-badge">Regulatory & Security Confidence</span>
+          <h2 class="display-6 fw-bold mb-4 text-white">
+            Enterprise Security Standards You Can Rely On
+          </h2>
+          <p class="text-white-50 mb-4">
+            We engineer IT systems that satisfy the strictest regulatory compliance requirements for healthcare, financial institutions, and global commerce.
+          </p>
+
+          <ul class="feature-check-list">
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              <div>
+                <strong>Immutable Data Repositories</strong>
+                <p class="text-white-50 mb-0 small">Ransomware-proof storage snapshots that cannot be encrypted or deleted.</p>
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              <div>
+                <strong>Continuous Compliance Auditing</strong>
+                <p class="text-white-50 mb-0 small">Real-time posture management with automated CIS benchmark reporting.</p>
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              <div>
+                <strong>Zero-Trust Identity Enforcement</strong>
+                <p class="text-white-50 mb-0 small">Context-aware multi-factor authentication and role-based least privilege.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="compliance-badge-card">
+                <i class="bi bi-patch-check-fill compliance-icon"></i>
+                <h5 class="text-white fw-bold mb-1">SOC 2 Type II</h5>
+                <p class="text-white-50 small mb-0">Certified Annually</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="compliance-badge-card">
+                <i class="bi bi-shield-fill-check compliance-icon"></i>
+                <h5 class="text-white fw-bold mb-1">ISO 27001</h5>
+                <p class="text-white-50 small mb-0">Information Security</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="compliance-badge-card">
+                <i class="bi bi-hospital-fill compliance-icon"></i>
+                <h5 class="text-white fw-bold mb-1">HIPAA Verified</h5>
+                <p class="text-white-50 small mb-0">Healthcare Workloads</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="compliance-badge-card">
+                <i class="bi bi-credit-card-2-front-fill compliance-icon"></i>
+                <h5 class="text-white fw-bold mb-1">PCI-DSS Level 1</h5>
+                <p class="text-white-50 small mb-0">Fintech & Payments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. Filterable Case Studies
+       ========================================================================= -->
+  <section id="case-studies" class="case-studies-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Proven Results</span>
+        <h2 class="section-title">Enterprise Case Studies</h2>
+        <p class="section-subtitle">Real-world metrics and business outcomes achieved for our global enterprise partners.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-btn-group">
+        <button class="filter-btn active" data-filter="all">All Solutions</button>
+        <button class="filter-btn" data-filter="cloud">Cloud Architecture</button>
+        <button class="filter-btn" data-filter="security">Cybersecurity</button>
+        <button class="filter-btn" data-filter="ai">AI & Big Data</button>
+      </div>
+
+      <!-- Case Study Grid -->
+      <div class="row g-4" id="caseStudiesContainer">
+        <!-- Study 1 -->
+        <div class="col-md-6 col-lg-4 case-study-item" data-category="cloud">
+          <div class="case-study-card">
+            <div class="case-card-header d-flex justify-content-between align-items-center">
+              <span class="case-tag">Fintech Cloud</span>
+              <small class="text-white-50">Global Banking Group</small>
+            </div>
+            <div class="case-card-body">
+              <h4 class="fw-bold mb-3 fs-5">Multi-Region Kubernetes Migration</h4>
+              <p class="text-muted small">
+                Transitioned a legacy on-prem core banking engine to auto-scaling AWS EKS clusters with zero interruption.
+              </p>
+              <div class="case-metric">
+                <div class="fw-bold text-dark fs-5">42% Cost Reduction</div>
+                <small class="text-secondary">Lower annual infrastructure spend</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Study 2 -->
+        <div class="col-md-6 col-lg-4 case-study-item" data-category="security">
+          <div class="case-study-card">
+            <div class="case-card-header d-flex justify-content-between align-items-center">
+              <span class="case-tag">Zero-Trust SOC</span>
+              <small class="text-white-50">Healthcare Logistics</small>
+            </div>
+            <div class="case-card-body">
+              <h4 class="fw-bold mb-3 fs-5">Enterprise Zero-Trust Deployment</h4>
+              <p class="text-muted small">
+                Equipped 12,000 remote clinicians with biometric identity-aware proxies and automated threat detection.
+              </p>
+              <div class="case-metric">
+                <div class="fw-bold text-dark fs-5">100% Attack Prevention</div>
+                <small class="text-secondary">0 successful phishing breaches</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Study 3 -->
+        <div class="col-md-6 col-lg-4 case-study-item" data-category="ai">
+          <div class="case-study-card">
+            <div class="case-card-header d-flex justify-content-between align-items-center">
+              <span class="case-tag">AI Pipeline</span>
+              <small class="text-white-50">E-Commerce Giant</small>
+            </div>
+            <div class="case-card-body">
+              <h4 class="fw-bold mb-3 fs-5">Real-Time Data Lakehouse & AI</h4>
+              <p class="text-muted small">
+                Architected high-throughput Snowflake & Kafka pipeline handling 80M daily consumer transaction events.
+              </p>
+              <div class="case-metric">
+                <div class="fw-bold text-dark fs-5">5.2x Faster Queries</div>
+                <small class="text-secondary">Near instant executive dashboards</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. Contact Us Section (Interactive Form & Direct Corporate Channels)
+       ========================================================================= -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-box">
+        <div class="row g-0">
+          <!-- Left: Corporate Contact Info -->
+          <div class="col-lg-5 p-4 p-md-5 bg-dark text-white d-flex flex-column justify-content-between" style="background-color: var(--navy-deep) !important;">
+            <div>
+              <span class="hero-badge mb-3">Get In Touch</span>
+              <h3 class="fw-bold mb-4 text-white">Let’s Architect Your Next IT Milestone</h3>
+              <p class="text-white-50 mb-4">
+                Schedule a complimentary 45-minute architecture assessment with our Principal Solutions Architects.
+              </p>
+
+              <div class="d-flex flex-column gap-3 mb-4">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="hero-card-icon" style="width: 40px; height: 40px; font-size: 1.1rem;">
+                    <i class="bi bi-geo-alt-fill"></i>
+                  </div>
+                  <div>
+                    <strong class="d-block text-white">Phnom Penh (Headquarters)</strong>
+                    <small class="text-white-50">Sangkat Phsa Chas, Khan Daun Penh, Phnom Penh, Cambodia</small>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                  <div class="hero-card-icon" style="width: 40px; height: 40px; font-size: 1.1rem;">
+                    <i class="bi bi-envelope-fill"></i>
+                  </div>
+                  <div>
+                    <strong class="d-block text-white">General Inquiries</strong>
+                    <small class="text-white-50">info@argiscorp.com</small>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                  <div class="hero-card-icon" style="width: 40px; height: 40px; font-size: 1.1rem;">
+                    <i class="bi bi-headset"></i>
+                  </div>
+                  <div>
+                    <strong class="d-block text-white">Direct Toll-Free Line</strong>
+                    <small class="text-white-50">+855 xx xxx xxx</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-top border-secondary border-opacity-25 text-white-50 small">
+              Strict NDA guaranteed before technical documentation exchange.
+            </div>
+          </div>
+
+          <!-- Right: Interactive Form -->
+          <div class="col-lg-7 p-4 p-md-5 bg-white">
+            <h3 class="fw-bold mb-2 text-dark">Request Architecture Consultation</h3>
+            <p class="text-secondary small mb-4">Complete the form below and an engineer will contact you within 2 business hours.</p>
+
+            <div id="formSuccessMessage" class="alert alert-success d-none mb-4" role="alert">
+              <i class="bi bi-check-circle-fill me-2"></i>
+              <strong>Consultation Request Received!</strong> Our solutions engineering team will reach out promptly.
+            </div>
+
+            <form id="consultationForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold small text-dark">First & Last Name</label>
+                  <input type="text" class="form-control" placeholder="e.g. Sok Bunthai" required>
+                  <div class="invalid-feedback">Please enter your full name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold small text-dark">Work Email</label>
+                  <input type="email" class="form-control" placeholder="Bunthai@company.com" required>
+                  <div class="invalid-feedback">Valid corporate email is required.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold small text-dark">Organization / Company</label>
+                  <input type="text" class="form-control" placeholder="Acme Technologies" required>
+                  <div class="invalid-feedback">Company name is required.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold small text-dark">Primary Focus Area</label>
+                  <select class="form-select">
+                    <option selected>Cloud Migration & Architecture</option>
+                    <option>Zero-Trust Security & SOC</option>
+                    <option>24/7 Managed IT Services</option>
+                    <option>Enterprise AI & Data Pipelines</option>
+                    <option>Disaster Recovery & Backup</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label fw-semibold small text-dark">Project Overview & Timeline</label>
+                  <textarea class="form-control" rows="4" placeholder="Briefly describe your existing infrastructure challenges or goals..."></textarea>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-navy btn-lg w-100">
+                    Submit Consultation Request <i class="bi bi-arrow-right ms-2"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Founder's Advice & Leadership Perspective
+       ========================================================================= -->
+  <section class="founder-advice-section">
+    <div class="container">
+      <div class="founder-card position-relative">
+        <div class="founder-card-border-glow"></div>
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <span class="hero-badge mb-0">
+                <i class="bi bi-chat-quote-fill"></i> Founder's Advice
+              </span>
+              <span class="text-white-50 small">Strategic IT Leadership Note</span>
+            </div>
+            
+            <p class="founder-quote-text">
+              "In enterprise technology, speed without security is negligence, and stability without innovation is obsolescence. My advice to every technology leader: Never treat cybersecurity as an afterthought or cloud transformation as merely an expense. Build resilient foundations with zero compromise, protect your enterprise data with radical accountability, and architect your systems to withstand the challenges of the next decade."
+            </p>
+
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <span class="founder-advice-pill"><i class="bi bi-shield-check text-info"></i> Security by Design</span>
+              <span class="founder-advice-pill"><i class="bi bi-diagram-3 text-info"></i> Resiliency Over Short-Cuts</span>
+              <span class="founder-advice-pill"><i class="bi bi-award text-info"></i> Radical Accountability</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-3">
+              <div class="founder-avatar">
+                RS
+              </div>
+              <div>
+                <h5 class="founder-name">Dr. Theng RatanakRaksmey</h5>
+                <div class="founder-title-badge">Founder & Chief Executive Officer</div>
+                <small class="text-white-50">ARGIS Corporation</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 text-center text-lg-end d-flex flex-column align-items-center align-items-lg-end justify-content-center">
+            <div class="p-3 px-4 rounded-3 border border-secondary border-opacity-25 bg-dark bg-opacity-50 text-center mb-3" style="max-width: 280px;">
+              <small class="text-white-50 text-uppercase d-block fw-semibold mb-1" style="font-size: 0.72rem; letter-spacing: 0.08em;">Executive Motto</small>
+              <span class="text-white fw-bold fst-italic">"Zero-Downtime, Zero-Compromise, Always Forward."</span>
+            </div>
+            <div class="founder-signature">Theng RatanakRaksmey</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. Corporate Footer
+       ========================================================================= -->
+  <footer class="footer-corporate">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1 -->
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="brand-icon">
+              <i class="bi bi-shield-lock-fill"></i>
+            </div>
+            <span class="fw-bold fs-4 text-white">ARGIS <span style="color: var(--cyan-accent);">CORPORATION</span></span>
+          </div>
+          <p class="small text-white-50 pe-lg-4">
+            ARGIS Corporation provides enterprise-grade cloud migration, Zero-Trust cybersecurity, and round-the-clock managed infrastructure services to industry leaders globally.
+          </p>
+          <div class="d-flex gap-3 text-white-50 fs-5 mt-3">
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-github"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="col-6 col-lg-2">
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#case-studies">Case Studies</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="col-6 col-lg-3">
+          <h4 class="footer-title">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#cloud">Cloud Architecture</a></li>
+            <li><a href="services.html#cybersecurity">Cyber Defense & SOC</a></li>
+            <li><a href="services.html#managed-it">Managed Infrastructure</a></li>
+            <li><a href="services.html#network">SD-WAN Networking</a></li>
+            <li><a href="services.html#data-ai">Enterprise Data & AI</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="col-lg-3">
+          <h4 class="footer-title">Executive Newsletter</h4>
+          <p class="small text-white-50">Receive monthly enterprise architecture insights and cybersecurity vulnerability bulletins.</p>
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Work email" aria-label="Work email">
+            <button class="btn btn-cyan" type="button"><i class="bi bi-send-fill"></i></button>
+          </div>
+          <small class="text-white-50 d-block">Zero spam. Unsubscribe anytime.</small>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="mb-0 text-white-50">© 2026 ARGIS Corporation. All rights reserved. Designed and Developed by Raksmey</p>
+        <div class="d-flex gap-4">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Security Disclosure</a>
+          <a href="#">Status Page</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
